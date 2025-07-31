@@ -1,0 +1,41 @@
+html{
+    box-sizing: border-box;
+
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}   
+body{
+    background-color: rgb(190, 190, 75);
+}
+#box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    background-color: brown;
+    animation-name: myAnim;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-delay: 0.5s ;
+    animation-timing-function: infinite;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnim {
+    0%{
+        left: 0px;
+        top: 0px;
+        background-color: brown;
+    }
+    50%{
+        top: 500px;
+        background-color: green;
+        border-radius: 59%;
+    }
+    100%{
+        left: 500px;
+        top: 0px;
+    }
+}
