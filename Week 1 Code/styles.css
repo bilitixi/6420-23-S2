@@ -1,0 +1,75 @@
+/* standerd to prevent padding and width issues */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* style for the body */
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1,5;
+}
+
+body {
+    float: left; /*The float property in CSS is used to position an element to the left or right of its container, allowing text and inline elements to wrap around it*/
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3{
+    font-size: 24px;
+}
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 4000; /*the font-weight property in CSS controls how thick or bold the text appears.*/
+    margin: 10px /*Margins are used to create space around elements, outside of any defined borders.*/
+}
+.content {
+    float: left;
+    width: 66.6666%
+}
+.sidebar {
+    float: left;
+    width: 33.3333%;
+   
+}
+.image-large{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse; /* The border-collapse property in CSS is used with HTML tables to control how the borders of table cells are rendered. */
+    border-spacing: 0;
+    width: 100%;
+    display: table; /* */
+
+}
+thead{
+    color: #fff;
+    background-color: mediumpurple;
+    
+}
+tr{
+    border-bottom: 1px solid #ccc;
+}
+th{
+    padding: 8px 8px 8px 16px;
+    display: table-cell;
+    text-align :left;
+    vertical-align: top;
+}
+th.third{
+    width: 33.33333%;
+}
+tbody tr:nth-child(even){
+    background-color: #f1f1f1;
+}
