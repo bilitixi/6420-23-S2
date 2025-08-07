@@ -1,0 +1,27 @@
+#container{
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+}
+#sceneImg1{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   background-image: url("/pic8.jpg");
+   width: 200%;
+   height: 800px;
+
+   animation-name: pan;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+   animation-direction: alternate;
+
+
+}
+@keyframes pan {
+    0% { left : -44px;}
+    100% { left: -494px;}
+}
